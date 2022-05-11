@@ -1,0 +1,37 @@
+import React, { useEffect, useState } from 'react';
+import { format } from 'date-fns';
+import AppointmentCard from './AppointmentCard';
+import BookingModal from './BookingModal';
+
+const AvailableAppointment = ({ date }) => {
+    const [services, setServices] = useState([]);
+    const [treatment, setTreatment] = useState(null);
+
+    useEffect(() => {
+        fetch("service.json")
+            .then(res => res.json())
+            .then(data => setServices(data))
+    }, []);
+
+    return (
+        <div className='my-16'>
+            <h1 className='text-center text-xl font-bold my-5' style={{ color: "#19D3AE" }}>Available Appointment On: {format(date, 'PP')}</h1>
+            <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 p-10'>
+                {
+                    services.map(data => <AppointmentCard
+                        key={data._id}
+                        service={data}
+                        setTreatment={setTreatment}
+                    />)
+                }
+            </div>
+            {treatment && <BookingModal
+                date={date}
+                treatment={treatment}
+                setTreatment={setTreatment}
+            />}
+        </div>
+    );
+};
+
+export default AvailableAppointment;
