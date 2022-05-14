@@ -7,6 +7,7 @@ import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import Reviews from './Pages/Reviews/Revies';
 import NavBar from './Pages/Shared/NavBar';
+import Singup from './Pages/Singup/Singup';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/about' element={<About />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/singup' element={<Singup />} />
       </Routes>
       
     </div>

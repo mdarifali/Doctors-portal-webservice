@@ -12,7 +12,7 @@ const ContactUs = () => {
                         <h1 class="text-white text-5xl text-center">Stay connected with us</h1>
                         <div class="mt-10">
                             <div class="form-control">
-                                <input type="text" placeholder="Email Address" class="input input-bordered" />
+                                <input type="email" placeholder="Email Address" class="input input-bordered" />
                             </div>
                             <div class="form-control my-5">
                                 <input type="text" placeholder="Subject" class="input input-bordered" />

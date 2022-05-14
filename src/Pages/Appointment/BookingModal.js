@@ -15,7 +15,7 @@ const BookingModal = ({ treatment, setTreatment, date }) => {
             <input type="checkbox" id="booking-modal" class="modal-toggle" />
             <div class="modal modal-bottom sm:modal-middle">
                 <div class="modal-box">
-                    <label for="booking-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <label htmlFor="booking-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                     <h3 class="font-bold text-lg" style={{ color: "#19D3AE" }}>Booking For {name}</h3>
                     <form onSubmit={hnadleBooking} className='mt-10'>
                         <div class="form-control">
@@ -26,7 +26,7 @@ const BookingModal = ({ treatment, setTreatment, date }) => {
 
                                 {
                                     slots.map(slot => <option
-                                        key={slots._id}
+                                        key={slots.id}
                                         value={slot}
                                     >{slot}</option>)
                                 }
@@ -43,7 +43,7 @@ const BookingModal = ({ treatment, setTreatment, date }) => {
                             <input type="text" name='Emial Address' placeholder="Email" class="input input-bordered input-success" />
                         </div>
                         <div class="form-control">
-                            <button type='submit' for="booking-modal" class="btn">Sumbit</button>
+                            <button type='submit' htmlFor="booking-modal" class="btn">Sumbit</button>
                         </div>
                     </form>
                 </div>
