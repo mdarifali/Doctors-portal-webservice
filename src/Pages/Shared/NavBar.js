@@ -1,19 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
 
     const navItems = <>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link  to='/appointment'>Appointment</Link></li>
-        <li><Link to='/reviews'>Reviews</Link></li>
-        <li><Link to='/contact'>Contact</Link></li>
-        <li><Link to='/about'>About</Link></li>
-        <li><Link to='/login'>Login</Link></li>
+        <li className='mx-1'><NavLink to='/'>Home</NavLink></li>
+        <li className='mx-1'><NavLink  to='/appointment'>Appointment</NavLink></li>
+        <li className='mx-1'><NavLink to='/reviews'>Reviews</NavLink></li>
+        <li className='mx-1'><NavLink to='/contact'>Contact</NavLink></li>
+        <li className='mx-1'><NavLink to='/about'>About</NavLink></li>
+        <li className='mx-1'><NavLink to='/login'>Login</NavLink></li>
     </>
 
     return (
-        <div class="navbar">
+        <div class="navbar px-12">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabIndex="0" class="btn btn-ghost lg:hidden">
@@ -25,7 +25,7 @@ const NavBar = () => {
                 </div>
                 <Link to='/home' class="btn btn-ghost normal-case text-xl">Doctors Portal</Link>
             </div>
-            <div class="navbar-center hidden lg:flex">
+            <div class="navbar-end hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
                     {navItems}
                 </ul>

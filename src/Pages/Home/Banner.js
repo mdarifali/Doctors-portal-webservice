@@ -5,7 +5,7 @@ import bannerBg from '../../assets/images/bg.png';
 const Banner = () => {
     
     return (
-        <section class="hero min-h-screen object-cover" style={{ background: `url(${bannerBg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+        <section class="hero min-h-screen px-12" style={{ background: `url(${bannerBg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
             <div class="hero-content flex-col lg:flex-row-reverse gap-10">
                 <img src={chair} class="max-w-sm rounded-lg shadow-2xl" alt='banner'/>
                 <div>
