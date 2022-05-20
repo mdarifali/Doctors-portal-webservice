@@ -51,12 +51,12 @@ const Login = () => {
                             <input type="email" name='email' placeholder="Email Address" class="mb-5 input input-bordered input-accent w-full max-w-xs" required />
                             <input type="password" name='password' placeholder="Password" class="mb-3 input input-bordered input-accent w-full max-w-xs" required />
                             <div className='text-sm text-left ml-9'>
-                                <Link to='/#'><p>Forgot Password?</p></Link>
+                                <Link to='/resetpass'><p>Forgot Password?</p></Link>
                             </div>
-                            <button type='submit' class="btn text-white w-full max-w-xs my-5 ">Login</button>
+                            <button type='submit' class="btn btn-accent text-white w-full max-w-xs my-5 ">Login</button>
                             <div className='text-sm text-center'>
                                 <Link to='/singup'>
-                                    <p>New to Doctors Portal? <span className=' text-cyan-400 font-bold'>Create new account</span></p>
+                                    <p>New to Doctors Portal? <span className='text-primary font-bold'>Create new account</span></p>
                                 </Link>
                             </div>
                             <div class="divider px-9">OR</div>
@@ -64,7 +64,6 @@ const Login = () => {
                         </form>
                     </div>
                 </div>
-                <ToastContainer autoClose={5000} />
             </div>
         </section>
     );

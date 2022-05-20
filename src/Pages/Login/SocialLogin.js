@@ -27,7 +27,6 @@ const SocialLogin = () => {
 
     return (
         <div>
-            <ToastContainer autoClose={5000} />
             <button
                 onClick={() => signInWithGoogle()}
                 class="btn btn-outline btn-accent text-white my-3 w-full max-w-xs">

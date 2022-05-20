@@ -51,10 +51,10 @@ const Singup = () => {
                         <input type="text" name='name' placeholder="Full Name" class="mb-5 input input-bordered input-accent w-full max-w-xs" required />
                         <input type="email" name='email' placeholder="Email Address" class="mb-5 input input-bordered input-accent w-full max-w-xs" required />
                         <input type="password" name='password' placeholder="Password" class="mb-2 input input-bordered input-accent w-full max-w-xs" required />
-                        <button type='submit' class="btn text-white w-full max-w-xs my-5 ">Register Now</button>
+                        <button type='submit' class="btn btn-accent text-white w-full max-w-xs my-5 ">Register Now</button>
                         <div className='text-sm text-center'>
                             <Link to='/login'>
-                                <p>Already have an account? <span className=' text-cyan-400 font-bold'>Login Now</span></p>
+                                <p>Already have an account? <span className='text-primary font-bold'>Login Now</span></p>
                             </Link>
                         </div>
                         <div className='px-12'>

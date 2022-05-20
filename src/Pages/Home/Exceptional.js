@@ -13,7 +13,7 @@ const Exceptional = () => {
                     <div className='flex-1 ml-12'>
                         <h1 class="text-5xl font-bold">Exceptional Dental Care, <br /> on Your Terms</h1>
                         <p class="py-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam tenetur nobis labore, quis minus explicabo nisi officia repellendus repudiandae reprehenderit consequuntur ipsam autem commodi accusamus doloribus consequatur accusantium aperiam sint voluptatum ipsa possimus! Repellat voluptatem voluptatibus commodi eos dolorem deleniti.</p>
-                        <button class="btn" style={{ backgroundColor: "#19D3AE" }}>Get Started</button>
+                        <button class="btn font-bold bg-gradient-to-r from-secondary to-primary">Get Started</button>
                     </div>
                 </div>
             </div>

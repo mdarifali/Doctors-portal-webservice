@@ -10,7 +10,7 @@ const Testimonial = () => {
         <section className='px-12'>
             <div className='flex justify-between'>
                 <div>
-                    <h2 className='text-2xl font-bold' style={{ color: "#19D3AE" }} >Testimonial</h2>
+                    <h2 className='text-primary text-2xl font-bold'>Testimonial</h2>
                     <h1 className='text-5xl'>What Our Patients Says</h1>
                 </div>
                 <div>

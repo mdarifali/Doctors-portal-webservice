@@ -6,7 +6,7 @@ const AppointmentCard = ({ service, setTreatment }) => {
     return (
         <div class="card lg:max-w-lg shadow-xl text-primary-content">
             <div class="card-body">
-                <h2 class="card-title justify-center text-xl" style={{ color: "#19D3AE" }}>{name}</h2>
+                <h2 class="card-title justify-center text-xl text-primary">{name}</h2>
                 <p className='text-center'>
                     {
                         slots.length > 0 ? <span className='text-neutral'>{slots[0]}</span>

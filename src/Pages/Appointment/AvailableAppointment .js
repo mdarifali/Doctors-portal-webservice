@@ -23,7 +23,7 @@ const AvailableAppointment = ({ date }) => {
 
     return (
         <div className='my-16'>
-            <h1 className='text-center text-xl font-bold my-5' style={{ color: "#19D3AE" }}>Available Appointment On: {format(date, 'PP')}</h1>
+            <h1 className='text-center text-primary text-xl font-bold my-5'>Available Appointment On: {format(date, 'PP')}</h1>
             {loading ? <Loading /> :
                 <>
                     <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 p-10'>
@@ -37,6 +37,7 @@ const AvailableAppointment = ({ date }) => {
             </div>
             {treatment && <BookingModal
                 date={date}
+                key={treatment._id}
                 treatment={treatment}
                 setTreatment={setTreatment}
             />}

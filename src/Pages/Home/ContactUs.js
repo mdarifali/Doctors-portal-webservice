@@ -8,7 +8,7 @@ const ContactUs = () => {
             <div class="hero" style={{ background: `url(${appointment})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
                 <div class="hero-content ">
                     <div className='card p-5'>
-                        <h2 className='text-2xl font-bold text-center' style={{ color: "#19D3AE" }} >Contact Us</h2>
+                        <h2 className='text-2xl font-bold text-center text-primary' >Contact Us</h2>
                         <h1 class="text-white text-5xl text-center">Stay connected with us</h1>
                         <div class="mt-10">
                             <div class="form-control">
@@ -21,7 +21,7 @@ const ContactUs = () => {
                                 <textarea class="textarea" rows="4" cols="50" placeholder="Your message"></textarea>
                             </div>
                             <div className='text-center my-5'>
-                                <button class="btn btn-accent text-white">Submit</button>
+                                <button class="btn font-bold bg-gradient-to-r from-secondary to-primary">Submit</button>
                             </div>
                         </div>
                     </div>
