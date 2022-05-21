@@ -7,7 +7,7 @@ import TestimonialCard from './TestimonialCard';
 
 const Testimonial = () => {
     return (
-        <section className='px-12'>
+        <section className='px-12 mt-10'>
             <div className='flex justify-between'>
                 <div>
                     <h2 className='text-primary text-2xl font-bold'>Testimonial</h2>

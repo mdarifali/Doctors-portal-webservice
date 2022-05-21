@@ -29,7 +29,7 @@ const SocialLogin = () => {
         <div>
             <button
                 onClick={() => signInWithGoogle()}
-                class="btn btn-outline btn-accent text-white my-3 w-full max-w-xs">
+                className="btn btn-outline btn-accent text-white my-3 w-full max-w-xs">
                 CONTINUE WITH GOOGLE
             </button>
         </div>

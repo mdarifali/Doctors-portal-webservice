@@ -3,10 +3,10 @@ import React from 'react';
 const Dashboard = () => {
 
   return (
-    <div class="drawer drawer-mobile py-12">
-      <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-      <div class="drawer-content m-10">
-        <table class="table w-full">
+    <div className="drawer drawer-mobile py-12">
+      <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+      <div className="drawer-content m-10">
+        <table className="table w-full">
               {/* <!-- head --> */}
               <thead>
                 <tr>
@@ -26,11 +26,11 @@ const Dashboard = () => {
                 </tr>
               </tbody>
             </table>
-        <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+        <label for="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
       </div>
-      <div class="drawer-side">
-        <label for="my-drawer-2" class="drawer-overlay"></label>
-        <ul class="menu p-4 overflow-y-auto w-80 bg-gray-200 text-base-content">
+      <div className="drawer-side">
+        <label for="my-drawer-2" className="drawer-overlay"></label>
+        <ul className="menu p-4 overflow-y-auto w-80 bg-gray-200 text-base-content">
           <li>Appointment History</li>
           <li>All Users</li>
           <li>Update Data</li>

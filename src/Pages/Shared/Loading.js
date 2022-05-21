@@ -3,11 +3,11 @@ import { SpinnerDotted } from 'spinners-react';
 
 const Loading = () => {
     return (
-        <div class="hero min-h-screen bg-gray-50">
-            <div class="hero-content text-center">
-                <div class="max-w-md">
-                    <SpinnerDotted size={100} thickness={96} speed={114} color="#19D3AE" />
-                    <h1 className='mt-2 text-xl font-bold text-primary'>Loading...</h1>
+        <div className="hero min-h-screen bg-gray-50">
+            <div className="hero-content text-center">
+                <div className="max-w-md">
+                    <SpinnerDotted size={100} thickness={96} speed={114} color="#F32424" />
+                    <h1 className='mt-2 text-xl font-bold text-orange-500'>Loading...</h1>
                 </div>
             </div>
         </div>

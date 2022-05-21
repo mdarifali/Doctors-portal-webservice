@@ -30,16 +30,16 @@ const ResetPassword = () => {
 
     return (
         <section>
-            <div class="hero min-h-screen">
-                <div class="hero-content text-center">
-                    <div class="max-w-md">
-                        <h1 class="text-3xl font-bold">Forgot Password</h1>
+            <div className="hero min-h-screen">
+                <div className="hero-content text-center">
+                    <div className="max-w-md">
+                        <h1 className="text-3xl font-bold">Forgot Password</h1>
                         <form onSubmit={handleReset} className='mt-7'>
-                            <input type="email" name='email' placeholder="Email Address" class="input input-bordered input-accent w-full max-w-xs" required />
-                            <button type='submit' class="btn bg-red-600 text-white w-full max-w-xs my-5 ">Reset Now</button>
+                            <input type="email" name='email' placeholder="Email Address" className="input input-bordered input-accent w-full max-w-xs" required />
+                            <button type='submit' className="btn bg-red-600 text-white w-full max-w-xs my-5 ">Reset Now</button>
                             <div className='text-sm text-center'>
                                 <Link to='/login'>
-                                    <button type='submit' class="btn text-white w-full max-w-xs ">Go Back Login</button>
+                                    <button type='submit' className="btn text-white w-full max-w-xs ">Go Back Login</button>
                                 </Link>
                             </div>
                         </form>

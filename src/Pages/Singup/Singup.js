@@ -39,31 +39,33 @@ const Singup = () => {
         const password = event.target.password.value;
         const name = event.target.name.value;
         createUserWithEmailAndPassword(email, password, name);
+        toast.success(`${name} Congratulations! Welcome our new member`, {
+            position: toast.POSITION.TOP_LEFT
+        });
     }
 
 
     return (
-        <div class="hero min-h-screen">
-            <div class="hero-content text-center">
-                <div class="max-w-md">
-                    <h1 class="text-3xl font-bold">Register Form</h1>
+        <div className="hero min-h-screen">
+            <div className="hero-content text-center shadow-2xl rounded-2xl">
+                <div className="max-w-md">
+                    <h1 className="text-3xl font-bold">Register Form</h1>
                     <form onSubmit={handleSingup} className='mt-7'>
-                        <input type="text" name='name' placeholder="Full Name" class="mb-5 input input-bordered input-accent w-full max-w-xs" required />
-                        <input type="email" name='email' placeholder="Email Address" class="mb-5 input input-bordered input-accent w-full max-w-xs" required />
-                        <input type="password" name='password' placeholder="Password" class="mb-2 input input-bordered input-accent w-full max-w-xs" required />
-                        <button type='submit' class="btn btn-accent text-white w-full max-w-xs my-5 ">Register Now</button>
+                        <input type="text" name='name' placeholder="Full Name" className="mb-5 input input-bordered input-accent w-full max-w-xs" required />
+                        <input type="email" name='email' placeholder="Email Address" className="mb-5 input input-bordered input-accent w-full max-w-xs" required />
+                        <input type="password" name='password' placeholder="Password" className="mb-2 input input-bordered input-accent w-full max-w-xs" required />
+                        <button type='submit' className="btn btn-accent text-white w-full max-w-xs my-5 ">Register Now</button>
                         <div className='text-sm text-center'>
                             <Link to='/login'>
                                 <p>Already have an account? <span className='text-primary font-bold'>Login Now</span></p>
                             </Link>
                         </div>
                         <div className='px-12'>
-                            <div class="divider">OR</div>
+                            <div className="divider">OR</div>
                         </div>
                         <SocialLogin />
                     </form>
                 </div>
-                <ToastContainer autoClose={5000} />
             </div>
         </div>
     );

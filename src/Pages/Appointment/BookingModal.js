@@ -57,17 +57,17 @@ const BookingModal = ({ treatment, setTreatment, date }) => {
 
     return (
         <div>
-            <input type="checkbox" id="booking-modal" class="modal-toggle" />
-            <div class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box">
-                    <label htmlFor="booking-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                    <h3 class="font-bold text-lg text-primary">Booking For {name}</h3>
+            <input type="checkbox" id="booking-modal" className="modal-toggle" />
+            <div className="modal modal-bottom sm:modal-middle">
+                <div className="modal-box">
+                    <label htmlFor="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 className="font-bold text-lg text-primary">Booking For {name}</h3>
                     <form onSubmit={hnadleBooking} className='mt-10'>
-                        <div class="form-control">
-                            <input type="text" disabled value={format(date, 'PP')} class="input input-bordered input-success" />
+                        <div className="form-control">
+                            <input type="text" disabled value={format(date, 'PP')} className="input input-bordered input-success" />
                         </div>
-                        <div class="form-control my-5">
-                            <select name='slot' class="select select-success">
+                        <div className="form-control my-5">
+                            <select name='slot' className="select select-success">
 
                                 {
                                     slots.map(slot => <option
@@ -78,17 +78,17 @@ const BookingModal = ({ treatment, setTreatment, date }) => {
 
                             </select>
                         </div>
-                        <div class="form-control my-5">
-                            <input type="text" name='name' value={user?.displayName} disabled class="input input-bordered input-success" />
+                        <div className="form-control my-5">
+                            <input type="text" name='name' value={user?.displayName} disabled className="input input-bordered input-success" />
                         </div>
-                        <div class="form-control my-5">
-                            <input type="email" name='email' value={user?.email} disabled class="input input-bordered input-success" />
+                        <div className="form-control my-5">
+                            <input type="email" name='email' value={user?.email} disabled className="input input-bordered input-success" />
                         </div>
-                        <div class="form-control my-5">
-                            <input type="number" name='phone' placeholder="Phone Number" class="input input-bordered input-success" />
+                        <div className="form-control my-5">
+                            <input type="number" name='phone' placeholder="Phone Number" className="input input-bordered input-success" />
                         </div>
-                        <div class="form-control">
-                            <button type='submit' htmlFor="booking-modal" class="btn">Sumbit</button>
+                        <div className="form-control">
+                            <button type='submit' htmlFor="booking-modal" className="btn">Sumbit</button>
                         </div>
                     </form>
                 </div>

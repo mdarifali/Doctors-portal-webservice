@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import SocialLogin from './SocialLogin';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 
@@ -14,6 +14,7 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    
 
     const navigate = useNavigate();
     const location = useLocation();
@@ -31,6 +32,9 @@ const Login = () => {
 
     if (user) {
         navigate(form);
+        toast.success(`Welcome! Login Successful`, {
+            position: toast.POSITION.TOP_LEFT
+        });
     }
 
     const handleLogin = event => {
@@ -43,23 +47,23 @@ const Login = () => {
 
     return (
         <section>
-            <div class="hero min-h-screen">
-                <div class="hero-content text-center">
-                    <div class="max-w-md">
-                        <h1 class="text-3xl font-bold">Login</h1>
+            <div className="hero min-h-screen">
+                <div className="hero-content text-center shadow-2xl rounded-2xl">
+                    <div className="max-w-md">
+                        <h1 className="text-3xl font-bold">Login</h1>
                         <form onSubmit={handleLogin} className='mt-8'>
-                            <input type="email" name='email' placeholder="Email Address" class="mb-5 input input-bordered input-accent w-full max-w-xs" required />
-                            <input type="password" name='password' placeholder="Password" class="mb-3 input input-bordered input-accent w-full max-w-xs" required />
+                            <input type="email" name='email' placeholder="Email Address" className="mb-5 input input-bordered input-accent w-full max-w-xs" required />
+                            <input type="password" name='password' placeholder="Password" className="mb-3 input input-bordered input-accent w-full max-w-xs" required />
                             <div className='text-sm text-left ml-9'>
                                 <Link to='/resetpass'><p>Forgot Password?</p></Link>
                             </div>
-                            <button type='submit' class="btn btn-accent text-white w-full max-w-xs my-5 ">Login</button>
+                            <button type='submit' className="btn btn-accent text-white w-full max-w-xs my-5 ">Login</button>
                             <div className='text-sm text-center'>
                                 <Link to='/singup'>
                                     <p>New to Doctors Portal? <span className='text-primary font-bold'>Create new account</span></p>
                                 </Link>
                             </div>
-                            <div class="divider px-9">OR</div>
+                            <div className="divider px-9">OR</div>
                             <SocialLogin />
                         </form>
                     </div>
